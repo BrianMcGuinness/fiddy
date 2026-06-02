@@ -1,0 +1,320 @@
+/* css reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+/* basic styles */
+
+.wrapper {
+ 
+	display: flex; 
+	flex-direction: column;
+	width: 100%;
+  max-width: 500px;
+ 	margin: 0 auto;
+	padding: 0;
+}
+
+
+.content{
+  position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	font-family: 'Work Sans', sans-serif;
+	min-height: 100vh;
+	padding: 15px;
+}
+
+.content h1{
+	font-weight: bold;
+	font-size: 35pt;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.content p{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.page1{
+	text-align: center;
+	color:#ffffff;
+  background-repeat: no-repeat;
+background-size: cover;
+    background-image: url("birthday.jpg");
+}
+
+.page1 h1, .page1 p{
+    margin-top: auto;
+    color: #ffffff;    
+}
+
+.page2{
+  text-align: center;
+	color:#384E5D;
+  background-color: #ffffff;
+}
+
+.page2 h1, .page2 p{
+    color:#384E5D;    
+}
+
+.page3{
+  text-align: center;
+	color:#384E5D;
+  background-color: #dddddd;
+}
+
+.page3 h1, .page3 p{
+    color:#384E5D;    
+}
+
+.page4{
+  text-align: center;
+	color:#384E5D;
+  //background-repeat: no-repeat;
+  //background-position: 100% 100%;
+  //background-image: url("calendar.png");
+}
+
+.page4 h1, .page4 p{
+    color:#384E5D;    
+}
+
+.page5{
+  text-align: center;
+	color:#384E5D;
+  background-color: #eeeeee;
+}
+
+.page5 h1, .page5 p{
+    color:#384E5D;    
+}
+
+.page6{
+  text-align: center;
+	color:#ffffff;
+  background-color: #0B5E6C;
+}
+
+.page6 h1, .page6 p{
+    color:#ffffff;    
+}
+
+.page7{
+  text-align: center;
+	color:#1a75bb;
+  background-color: #ffffff;
+}
+
+.page7 h1, .page7 p{
+    color:#1a75bb;    
+}
+.page8{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("22hill.png");
+}
+.page9{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("lobby.png");
+}
+.page10{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("city.jpg");
+}
+.page11{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("geysir.jpg");
+}
+.page12{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("northernlights.jpg");
+}
+
+.page13{
+  text-align: center;
+	color:#ffffff;
+  background-color: #F0A4A4;
+}
+
+.page13 h1, .page13 p{
+    color:#ffffff;    
+}
+
+.suitcase{
+  width: auto;
+}
+
+.question{
+  width: auto;
+}
+
+.tea{
+  width: auto;
+}
+
+.calendar{
+  width: auto;
+}
+
+.airplane{
+  width: 100%;
+}
+
+.reykjavik{
+  width: auto;
+  max-width: 100%; 
+}
+
+.cake{
+  width: auto;
+  max-width: 100%; 
+}
+
+.arrow--down{
+    height: 100px;
+    width: 100px;
+    fill: #ffffff;
+}
+
