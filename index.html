@@ -1,91 +1,133 @@
-<!DOCTYPE HTML>
-<html>	
-	<head>
-		<title>Happy Birthday Cat!</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-		<link rel="stylesheet" type="text/css" href="app.css" />
-		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<body>
-        <svg style="display:none;">
-            <defs>
-				<symbol id="arrow-down" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve">
-					<path d="M51.162,80.908l17.979-17.979c0.642-0.642,0.642-1.683,0-2.325c-0.642-0.642-1.683-0.642-2.325,0L51.644,75.777V20.254  c0-0.908-0.736-1.644-1.644-1.644c-0.908,0-1.644,0.736-1.644,1.644v55.523L33.183,60.604c-0.642-0.642-1.683-0.642-2.325,0  c-0.321,0.321-0.482,0.742-0.482,1.162s0.161,0.841,0.482,1.162l17.979,17.979c0.308,0.308,0.726,0.482,1.162,0.482  C50.436,81.39,50.854,81.217,51.162,80.908z"/>
-				</symbol>
-            </defs>
-        </svg>
+  <title>Happy Birthday Cat!</title>
 
-		<div class="wrapper">
-			<div class="content page1">
-				<h1 class="bounceInDown animated">GO! GO! GO! GO! GO! GO!</h1>
-				<p>This way plz.</p>
-                <svg class="arrow--down"><use xlink:href="#arrow-down"></use></svg>
-			</div>
-			<div class="content page2">
-				<h1>Go shawty, it's your birthday</h1>
-				
-				<img class="tea" src="tea.png" />
-			</div>
-			<div class="content page3">
-				<h1>We gon' party like it's your birthday</h1>
-				<img class="question" src="question.png" />
-			</div>
-			<div class="content page4">
-				<h1>We gon' sip Bacardi like it's your birthday</h1>
-				<img class="question" src="question.png" />
-			</div>
-			<div class="content page4">
-				<h1>And you know we don't give a f*** cuz it's your birthday</h1>
-				<img class="question" src="question.png" />
-			</div>
-			<div class="content page4">
-				<h1>Congratulations! You're fiddy!</h1>
-				<img class="question" src="question.png" />
-			</div>
-			<div class="content page4">
-				<h1>I am once again asking you to get on one of these...</h1>
-				<img class="question" src="question.png" />
-			</div>
-			<div class="content page4">
-				<img class="calendar" src="calendaricon.png" />
-				<h1>Here's a clue...</h1>
-				<p>Keep these dates free...</p>
-				<p>22nd to 26th October</p>
-			</div>
-			<div class="content page5">
-				<h1>You might want to pack one of these...</h1>
-				<img class="suitcase" src="suitcase.png" />
-			</div>
-			<div class="content page6">
-				
-				<h1>We'll be getting on one of these...</h1>
-				<img class="airplane" src="airplane.png" />
-			</div>
-			<div class="content page7">
-				
-				<h1>Because we're going here!</h1>
-				<img class="reykjavik" src="reykjavik.png" />
-			</div>
-			<div class="content page8">
-			</div>
-			<div class="content page9">
-			</div>
-			<div class="content page10">
-			</div>
-			<div class="content page11">
-			</div>
-			<div class="content page12">
-			</div>
-			<div class="content page13">
-				
-				<h1>Happy Birthday Love!</h1>
-				<img class="cake" src="cake.png" />
-			</div>
-		</div>
+  <link rel="stylesheet" href="app.css" />
+</head>
 
-	</body>
+<body>
+  <main class="phone-frame">
+
+    <!-- Background layers used for crossfading -->
+    <div class="background-layer bg-a is-visible"></div>
+    <div class="background-layer bg-b"></div>
+
+	<!-- FIDDY -->
+    <section class="slide" data-bg="fiddy_smile.webp">
+      <h1>Go! Go! Go! Go! Go! Go!</h1>
+    </section>
+
+    <section class="slide" data-bg="fiddy_smile.webp">
+      <h1>Go shawty, it's your birthday</h1>
+    </section>
+
+    <section class="slide" data-bg="fiddy_smile.webp">
+      <h1>We gon' party like it's your birthday</h1>
+    </section>
+
+	<section class="slide" data-bg="fiddy_smile.webp">
+      <h1>We gon' sip Bacardi like it's your birthday</h1>
+    </section>
+
+	<section class="slide" data-bg="fiddy_smile.webp">
+      <h1>And you know we don't give a f*** cuz it's your birthday</h1>
+    </section>
+
+	<section class="slide" data-bg="fiddy_smile.webp">
+      <h1>You're fiddy today</h1>
+    </section>
+
+	<section class="slide" data-bg="fiddy_smile.webp">
+
+    </section>
+
+	<!-- BERNIE -->
+
+    <section class="slide" data-bg="bernie.webp">
+      <h1>I am once again asking you</h1>
+    </section>
+
+    <section class="slide" data-bg="bernie.webp">
+      <h1>To grab your passport</h1>
+    </section>
+
+    <section class="slide" data-bg="bernie.webp">
+      <h1>And a suitcase</h1>
+    </section>
+
+	<section class="slide" data-bg="bernie.webp">
+      <h1>And spectacularly fail to get any sleep before we fly...</h1>
+    </section>
+
+	<section class="slide" data-bg="bernie.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_1.webp">
+      <h1>...Here</h1>
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_1.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_2.webp">
+      <h1>This is Villa Bea</h1>
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_2.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_3.webp">
+      <h1>In Moraira</h1>
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_3.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_4.webp">
+      <h1>On the Costa Del Sol</h1>
+    </section>
+
+	<section class="slide" data-bg="Villa_Bea_4.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Teulada_1.webp">
+      <h1>We'll be flying out on Friday 17th July</h1>
+    </section>
+
+	<section class="slide" data-bg="Teulada_1.webp">
+      
+    </section>
+
+	<section class="slide" data-bg="Teulada_2.webp">
+      <h1>And staying until Friday 24th July</h1>
+    </section>
+
+	<section class="slide" data-bg="Teulada_2.webp">
+      <h1>And we're all going</h1>
+    </section>
+
+	<section class="slide" data-bg="Teulada_2.webp">
+    </section>
+
+	<section class="slide" data-bg="cake.webp">
+      <h1>Happy Birthday Love</h1>
+    </section>
+
+	<section class="slide" data-bg="cake.webp">
+		<h1>P.S. More about the villa <a href="https://www.villaplus.com/destinations/villas-in-spain/villas-in-mainland-spain/costa-blanca/moraira/villa-bea" target="_blank">here</a></h1>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
 </html>
